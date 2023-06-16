@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+        <!--=============== HEAD ===============-->
+		<title>Ruperti Explorer</title>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+        <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+        <!--=============== APP MANIFEST ===============-->
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="RuExplorer">
+        <meta name="apple-mobile-web-app-title" content="RuExplorer">
+        <meta name="theme-color" content="#AA2D88">
+        <meta name="msapplication-navbutton-color" content="#AA2D88">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="msapplication-starturl" content="/index.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!--=============== CDN links ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
+	</head>
+    
+    <body class="cookie_theme">
+
+        <!--=============== header mit dropdown menü ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="/index.html" class="nav__link">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="nav__name"><p>Start</p></span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="/code.html" class="nav__link">
+                                <i class="fa-solid fa-key"></i>
+                                <span class="nav__name"><p>Code</p></span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="/galerie.html" class="nav__link active-link">
+                                <i class="fa-solid fa-photo-video"></i>
+                                <span class="nav__name"><p>Galerie</p></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a href="/index.html"><img src ="/assets/weblogo.svg" alt="logo" class="nav__img svgcolor1"></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Infos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/dropdown/handbuch.html">Handbuch</a>
+                        <a href="/dropdown/readme.html">README</a>
+                        <a href="/dropdown/datenschutz.html">Datenschutz</a>
+                        <a href="/dropdown/impressum.html">Impressum</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        
+        <!--=============== TEXT ===============-->
+        <section class="container firstsection bottomsection" id="home">
+            <div class="textdiv">
+                <p><strong>Projekt: Ruperti Explorer</strong></p>
+                <br>
+                <p>Ein Projekt des Informatik Kurses 1inf0 am <a href="https://www.ruperti-gymnasium.de/">Ruperti Gymnasium</a> Mühldorf. Am Projekt Beteiligt sind Fiona Braun, Ansgar Berdel und Michael Wagner.</p>
+                <br>
+                <p>Die Website dient dem informieren über die Schule an interessierte Schüler und Eltern. Also wie eine Art Wikipedia für die Schule.</p>
+                <br>
+                <p>Das Projekt befindet sich aktuell in der Entwicklungsphase.</p>
+                <br>
+                <!--<p>(Bilder)</p>
+                <br>-->
+                <p>Programmiert wird in HTML, CSS und JavaScript.</p>
+                <p>Gehostet wird die Seite gerade auf <a href="https://github.com/rupertiexplorer/rupertiexplorer.github.io">github.com</a></p>
+                <br>
+                <!--<p>(Was steht hervor was sind die Besonderheiten?)</p>
+                <br>-->
+                <p>Mehr Infos zur Benutzung sind im Benutzerhandbuch zu finden. (First popup auch)</p>
+                <br>
+                <p>Wir bedanken uns zudem für die freundliche Bereitstellung von teilen des Codes durch:</p>
+                <p><a href="https://www.w3schools.com/">W3schools</a> für tipps und tricks</p>
+                <p>bedimcode's <a href="https://github.com/bedimcode/responsive-bottom-navigation">responsive-bottom-navigation</a></p>
+                <p><a href="https://gwfh.mranftl.com/">gwfh.mranftl</a> lokale Schriftarten tool</p>
+                <p>orestbida's <a href="https://github.com/orestbida/iframemanager/">iframemanager</a> & <a href="https://github.com/orestbida/cookieconsent">cookieconsent</a></p>
+            </div>
+        </section> 
+
+        <!--=============== JavaScript + CDN scripts ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
+    </body>
+</html>
+

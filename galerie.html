@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+        <!--=============== HEAD ===============-->
+		<title>Ruperti Explorer</title>
+        <meta charset="UTF-8" />
+        <script src="https://kit.fontawesome.com/dc1eb82b5e.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="/assets/css/main.css"/>
+		<noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
+
+        <!--=============== FAVICON ===============-->
+        <link rel="icon" type="image/x-icon" href="/assets/favicon.svg">
+        <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+
+        <!--=============== APP MANIFEST ===============-->
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="application-name" content="RuExplorer">
+        <meta name="apple-mobile-web-app-title" content="RuExplorer">
+        <meta name="theme-color" content="#AA2D88">
+        <meta name="msapplication-navbutton-color" content="#AA2D88">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="msapplication-starturl" content="/index.html">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+        <meta name="apple-mobile-web-app-capable" content="yes">
+
+        <!--=============== CDN links ===============-->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.css"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.css"
+        />
+	</head>
+    
+    <body class="cookie_theme">
+
+        <!--=============== header mit dropdown menü ===============-->
+        <header class="header" id="header">
+            <nav class="nav container">                
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link">
+                                <i class="fa-solid fa-house"></i>
+                                <span class="nav__name"><p>Start</p></span>
+                            </a>
+                        </li>
+                        
+                        <li class="nav__item">
+                            <a href="code.html" class="nav__link">
+                                <i class="fa-solid fa-key"></i>
+                                <span class="nav__name"><p>Code</p></span>
+                            </a>
+                        </li>
+
+                        <li class="nav__item">
+                            <a href="galerie.html" class="nav__link active-link">
+                                <i class="fa-solid fa-photo-video"></i>
+                                <span class="nav__name"><p>Galerie</p></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+
+                <a class="nav__logo" href="index.html"><h1 class="nav__title">Galerie</h1></a>
+                <div class="dropdown">
+                    <button class="dropbtn">Infos 
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                        <a href="/dropdown/handbuch.html">Handbuch</a>
+                        <a href="/dropdown/readme.html">README</a>
+                        <a href="/dropdown/datenschutz.html">Datenschutz</a>
+                        <a href="/dropdown/impressum.html">Impressum</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--=============== Info Artikel ===============-->
+        <section class="container firstsection bottomsection">
+            
+            <button class="collapsible">Unterricht</button>
+            <div class="content">
+                <a class="article_a" class="block" href="/galerie/sportplatz.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Sportplatz</h2>
+                            <p>Hier findet vorallem im Sommer der Sportunterricht statt, man kann zudem bei gutem Wetter in der Freizeit Sport machen.</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="images/fulls/sportplatz.jpg" alt="Bild des Artikels 1">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Sporthallen</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Sprachenraum</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Kunstsäle</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+            </div>
+            
+            <button class="collapsible">Pausen</button>
+            <div class="content">
+                <a class="article_a" class="block" href="/galerie/mensa.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Mensa</h2>
+                            <p>Hier können sich Schülerinnen und Schüler jederzeit etwas zu Essen oder zu Trinken kaufen.</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="images/fulls/mensa.jpg" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>große Pausenhalle</h2>
+                            <p>-</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="#">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>kleine Pausenhalle</h2>
+                            <p>-</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <button class="collapsible">Naturwissenschaften</button>
+            <div class="content">
+                <a class="article_a" class="block" href="/galerie/informatik.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Informatik</h2>
+                            <p>Hier finden der Natur & Technik- und Informatikunterricht statt.</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="/galerie/chemie.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Chemie</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="/galerie/physik.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Physik</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+                <a class="article_a" class="block" href="/galerie/biologie.html">
+                    <div class="article__child">
+                        <div class="article-description">
+                            <h2>Biologie</h2>
+                            <p>--</p>
+                        </div>
+                        <div class="article-image">
+                            <img class="article__pre" src="#" alt="Bild des Artikels">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <a class="article_a" class="block" href="/galerie/archiv.html">
+                <div class="article">
+                    <div class="article-description">
+                        <h2>Archiv</h2>
+                        <p>102 Jahre Ruperti-Gymnasium Mühldorf</p>
+                    </div>
+                    <div class="article-image">
+                        <img class="article__pre" src="/images/fulls/histBilder/main206.jpg" alt="Bild des Artikels 6">
+                    </div>
+                </div>
+            </a>
+        </section>
+            <!-- weitere Artikel hier -->
+        </div>
+          
+
+        <!--=============== JavaScript + CDN scripts ===============-->
+        <script src="assets/js/main.js"></script>
+
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/iframemanager@1.2.3/dist/iframemanager.js"
+        ></script>
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/gh/orestbida/cookieconsent@v3.0.0-rc.13/dist/cookieconsent.umd.js"
+        ></script>
+        
+        <script defer src="/assets/js/cookieconsent-init.js"></script>
+
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+            
+            for (i = 0; i < coll.length; i++) {
+              coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.maxHeight){
+                  content.style.maxHeight = null;
+                } else {
+                  content.style.maxHeight = content.scrollHeight + "px";
+                } 
+              });
+            }
+            </script>
+    </body>
+</html>
