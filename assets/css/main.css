@@ -71,9 +71,9 @@
   --header-height: 3rem;
 
   /*========== Colors ==========*/
-  --first-color: hsl(244, 58%, 42%);
+  --first-color: hsl(350, 87%, 43%);
   --second-color: hsl(0, 0%, 90%);
-  --title-color: hsl(316, 58%, 42%);
+  --title-color: hsl(350, 87%, 43%);
   --text-color: hsl(0, 0%, 0%);
   --body-color: hsl(0, 100%, 100%);
 
@@ -248,8 +248,12 @@ button {
   border-bottom: 2px solid var(--text-color);
 }
 
-.svgcolor1 {
-  filter: invert(27%) sepia(52%) saturate(2407%) hue-rotate(288deg) brightness(86%) contrast(93%);
+.svgcolor {
+  .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#2E2014;filter:url(#AI_GaußscherWeichzeichner_7);}
+  .st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+  .st2{fill-rule:evenodd;clip-rule:evenodd;fill:#CE0E2D;}
+  .st3{fill:var(--text-color);}
+  .st4{fill:url(#SVGID_1_);}
 }
 
 /*=============== DROPDOWN ===============*/
@@ -313,7 +317,7 @@ button {
 }
 
 .nav__img {
-  width: 140px;
+  width: 200px;
 }
 
 .nav__logo {
@@ -748,9 +752,9 @@ input {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --first-color: hsl(316, 58%, 42%);
+    --first-color: hsl(0, 100%, 50%);
     --second-color: hsl(0, 0%, 20%);
-    --title-color: hsl(316, 58%, 42%);
+    --title-color: hsl(0, 100%, 50%);
     --text-color: hsl(0, 100%, 100%);
     --body-color: hsl(0, 0%, 0%);
   }
